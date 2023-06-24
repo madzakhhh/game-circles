@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projekat 2</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container ">
+            <div class="row m-5 bg-primary">
+               <div class="col-5 offset-5">  <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">Nova igrica</button> </div>
+                <!-- Modal -->
+                <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Odaberi nivo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <button id="tezina1" class="btn btn-primary m-2">
+                                <a style="color:white" href="tezina1.html">Tezina 1</a>
+                                
+                            </button> 
+                        <br>
+                            <button  id="tezina2" class="btn btn-primary m-2">
+                                <a style="color:white" href="tezina2.html">Tezina 2</a>
+                                
+                            </button>
+                            <br>
+                            <button  id="tezina3" class="btn btn-primary m-2">
+                                <a style="color:white" href="tezina3.html">Tezina 3</a>
+                                
+                            </button>
+                            
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="row m-5 bg-primary">
+                <div class="col-10 offset-1">
+                    <p class="lead">Pravila igre</p>
+                    <p class="lead">
+                        -Prilikom pokretanja igrice generiše se jedan kružić na centru platna. Taj kružić nazivamo
+                        glavnim kružićem;<br>
+                        -Igrač kontroliše kretanje glavnog kružića pomjeranjem miša. Kružić se kreće preko platna
+                        tako što prati strelicu miša. <br>
+
+                        -Igra započinje kada igrač pomjeri miš (tj. glavni kružić);<br>
+                        -Osim glavnog kružića, u igri učestvuje i niz drugih, slučajno generisanih kružića;<br>
+                        -Prilikom kretanja kružića mišem, neki kružići će u jednom trenutku napustiti platno.<br>
+                        -Nakon što kružić napusti platno, generiše se novi kružić umjesto njega.<br>
+                                            
+
+                        -Ukoliko glavni kružić dodirne manji kružić, manji kružić nestaje, a glavni kružuć raste u
+                        skladu sa pravilom da se trenutnom poluprečniku doda x% (x definiše student) od
+                        veličine manjeg kružića;<br>
+                        -Ukoliko glavni kružić dodirne veći kružić, igrač gubi i igra završava. Potrebno je
+                        implementirati obavijest kojom se korisniku daje do znanja da je igra završena
+                    </p>
+                </div>
+
+            </div>
+            <div class="row m-5 bg-primary ">
+                <div class="col-10 offset-1">
+                <ul class="lead"> 
+                    <tl>O projektu</tl>
+                    <li>
+                        <tl> O predmetu</tl>
+                        <ul>
+                            
+                            <li>Asistent : doc.dr. Sead Delalic </li>
+                            <li>Profesor: prof.dr. Elmedin Selmanovic </li>
+                        </ul>
+                                               
+                    </li>
+                    <li>
+                        Univerzitet u Sarajevu
+                    </li>
+                    <li>
+                        Prirodno-matematicki fakultet
+                    </li>
+                    <li>
+                        Teorijska kompjuterska nauka
+                    </li>
+                    <li>
+                        Projekat Kruzici
+                    </li>
+                    <li> 
+                        <tl>O studentu</tl>
+                        <ul>
+                            <li>Hata Madzak</li>
+                            <li>hatama98@hotmail.com</li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
